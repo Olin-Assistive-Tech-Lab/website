@@ -1,80 +1,12 @@
 import { useState } from "react";
 import {
   ArrowRight,
-  ChevronDown,
   Menu,
   X,
-  Accessibility,
-  Lightbulb,
-  Users,
-  Code2,
+  ExternalLink,
 } from "lucide-react";
 
 import "./styles.css";
-
-const researchAreas = [
-  {
-    number: "01",
-    title: "Assistive Technology",
-    description:
-      "Exploring technologies that support greater independence, access, and participation in everyday life.",
-    icon: Accessibility,
-  },
-  {
-    number: "02",
-    title: "Human-Centered Research",
-    description:
-      "Working directly with people with disabilities to understand experiences, barriers, and opportunities for design.",
-    icon: Users,
-  },
-  {
-    number: "03",
-    title: "Accessible Interfaces",
-    description:
-      "Designing interactions that work across different abilities, devices, environments, and ways of experiencing technology.",
-    icon: Code2,
-  },
-  {
-    number: "04",
-    title: "Prototyping",
-    description:
-      "Turning research insights into tangible prototypes that can be tested, evaluated, and improved.",
-    icon: Lightbulb,
-  },
-];
-
-const process = [
-  {
-    number: "01",
-    title: "Understand",
-    description:
-      "We begin by listening to people and understanding their experiences with technology.",
-  },
-  {
-    number: "02",
-    title: "Explore",
-    description:
-      "Research and experimentation help us identify opportunities for more accessible technology.",
-  },
-  {
-    number: "03",
-    title: "Design",
-    description:
-      "We develop concepts and prototypes around real needs rather than assumptions.",
-  },
-  {
-    number: "04",
-    title: "Test",
-    description:
-      "Prototypes are evaluated to learn what works, what does not, and what should change.",
-  },
-  {
-    number: "05",
-    title: "Iterate",
-    description:
-      "We use what we learn to continuously improve our designs and research.",
-  },
-];
 
 function App() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -86,29 +18,27 @@ function App() {
   return (
     <div className="site">
 
-      {/* NAVIGATION */}
+      {/* =========================
+          NAVIGATION
+      ========================= */}
 
       <header className="navbar">
 
         <a
           href="#home"
-          className="brand"
+          className="logo"
           onClick={closeMenu}
         >
-          <span className="brand-logo">
-            OAT
-          </span>
-
-          <span className="brand-text">
-            OLIN
-            <br />
-            <strong>ASSISTIVE TECHNOLOGY LAB</strong>
-          </span>
+          <img
+            src="/images/oat-logo.png"
+            alt="Olin Assistive Technology Lab"
+          />
         </a>
 
         <button
           className="menu-button"
           onClick={() => setMenuOpen(!menuOpen)}
+          aria-label="Open navigation"
         >
           {menuOpen ? <X /> : <Menu />}
         </button>
@@ -124,32 +54,31 @@ function App() {
             About
           </a>
 
-          <a href="#research" onClick={closeMenu}>
-            Research
+          <a href="#goals" onClick={closeMenu}>
+            Goals
           </a>
 
-          <a href="#approach" onClick={closeMenu}>
-            Approach
+          <a href="#connections" onClick={closeMenu}>
+            Connections
           </a>
 
-          <a href="#team" onClick={closeMenu}>
-            Team
+          <a href="#history" onClick={closeMenu}>
+            History
           </a>
 
-          <a href="#partners" onClick={closeMenu}>
-            Partners
+          <a
+            href="#sponsor"
+            className="nav-button"
+            onClick={closeMenu}
+          >
+            Sponsor Us
           </a>
 
           <a href="#contact" onClick={closeMenu}>
             Contact
           </a>
-
-          <a
-            href="#research"
-            className="nav-cta"
-            onClick={closeMenu}
-          >
-            Explore Our Work
+          <a href="#our-team" onClick={closeMenu}>
+            Our Team
           </a>
         </nav>
 
@@ -158,123 +87,303 @@ function App() {
 
       <main>
 
-        {/* HERO */}
+        {/* =========================
+            HERO
+        ========================= */}
 
         <section
           id="home"
           className="hero"
         >
 
-          <div className="hero-grid" />
+          <img
+            className="hero-image"
+            src="/images/oat-banner.jpg"
+            alt="Olin Assistive Technology Lab"
+          />
 
-          <div className="hero-content">
+          <div className="hero-overlay" />
 
-            <p className="eyebrow">
-              OLIN COLLEGE OF ENGINEERING
-              <span>•</span>
-              ASSISTIVE TECHNOLOGY
-              <span>•</span>
-              HUMAN-CENTERED DESIGN
-            </p>
+          <div className="hero-content" style={{ flex: 1, maxWidth: '50%' }}>
 
             <h1>
-              DESIGN.
+              OLIN
               <br />
-              <span>ADAPT.</span>
+              ASSISTIVE
               <br />
-              EMPOWER.
+              <span>TECHNOLOGY LAB</span>
             </h1>
 
             <p className="hero-description">
-              We explore how technology can
-              make everyday experiences more
-              accessible, independent, and
-              inclusive.
+              Olin’s newest project team dedicated to creating impactful assistive devices that make the world a more accessible place for those whom it is not designed for. The team was established to give students a place to practice their engineering and design skills while fostering a passion for a positive social impact.
+
+
             </p>
 
-            <div className="hero-buttons">
-
-              <a
-                href="#research"
-                className="button button-primary"
-              >
-                Explore Our Work
-                <ArrowRight size={18} />
-              </a>
-
-              <a
-                href="#about"
-                className="button button-outline"
-              >
-                About the Lab
-              </a>
-
-            </div>
+            <a
+              href="#about"
+              className="hero-button"
+            >
+              Learn More
+              <ArrowRight size={18} />
+            </a>
 
           </div>
 
-          <a
-            href="#about"
-            className="scroll-indicator"
-          >
-            <ChevronDown size={18} />
-            Explore the Lab
-          </a>
+          <img 
+    src="/images/oat-team-2025-2026.jpg" 
+    style={{ width: '40%', height: 'auto', borderRadius: '8px' }} 
+    alt="OAT Lab Team 2025-2026 School Year" 
+  />  
 
         </section>
 
+        {/* =========================
+            SUPPORT US
+        ========================= */}
+        
 
-        {/* ABOUT */}
+
+        {/* =========================
+            ABOUT
+        ========================= */}
 
         <section
           id="about"
           className="section about"
         >
 
-          <div className="section-label">
-            01 / ABOUT THE LAB
+          <div className="section-number">
+            01
           </div>
 
-          <div className="about-grid">
+          <div className="section-title">
+            <p className="section-label">
+              ABOUT THE LAB
+            </p>
 
-            <div>
+            <h2>
+              Technology
+              <br />
+              <em>for everyone.</em>
+            </h2>
+          </div>
 
-              <h2>
-                Technology should
-                <br />
-                <em>work for everyone.</em>
-              </h2>
+          <div className="about-content">
 
-            </div>
+            <p className="lead">
+              The Olin Assistive Technology Lab
+              explores the intersection of people,
+              technology, and accessibility.
+            </p>
 
-            <div>
+            <p>
+              We investigate how people with
+              different abilities experience
+              technology and use those insights
+              to explore new approaches to
+              assistive technology, accessible
+              interfaces, and human-centered
+              design.
+            </p>
 
-              <p className="large-text">
-                The Olin Assistive Technology
-                Lab brings together engineering,
-                design, research, and lived
-                experience to explore better
-                ways of interacting with
-                technology.
-              </p>
+            <p>
+              Our work brings together students,
+              researchers, faculty, and community
+              members to learn from lived
+              experiences and develop technology
+              around real human needs.
+            </p>
+
+          </div>
+
+        </section>
+
+
+        {/* =========================
+            GOALS
+        ========================= */}
+
+        <section
+          id="goals"
+          className="dark-section"
+        >
+
+          <div className="dark-heading">
+
+            <p className="section-label">
+              02 / OUR GOALS
+            </p>
+
+            <h2>
+              What we're
+              <br />
+              <em>working toward.</em>
+            </h2>
+
+          </div>
+
+          <div className="goals-grid">
+
+            <article className="goal">
+
+              <span>01</span>
+
+              <h3>
+                Understand
+              </h3>
 
               <p>
-                Our work focuses on understanding
-                the experiences of people with
-                disabilities and using those
-                insights to create technologies
-                that support access, independence,
+                Learn from people with disabilities
+                and understand the barriers they
+                encounter when using technology.
+              </p>
+
+            </article>
+
+
+            <article className="goal">
+
+              <span>02</span>
+
+              <h3>
+                Design
+              </h3>
+
+              <p>
+                Explore accessible interfaces,
+                assistive technologies, and
+                human-centered design approaches.
+              </p>
+
+            </article>
+
+
+            <article className="goal">
+
+              <span>03</span>
+
+              <h3>
+                Prototype
+              </h3>
+
+              <p>
+                Turn research insights into
+                tangible concepts and technologies
+                that can be explored and tested.
+              </p>
+
+            </article>
+
+
+            <article className="goal">
+
+              <span>04</span>
+
+              <h3>
+                Empower
+              </h3>
+
+              <p>
+                Help create technology that gives
+                people greater choice, independence,
                 and participation.
               </p>
 
-              <a
-                href="#approach"
-                className="text-link"
-              >
-                Our approach
-                <ArrowRight size={17} />
-              </a>
+            </article>
 
+          </div>
+
+        </section>
+
+
+        {/* =========================
+            CONNECTIONS
+        ========================= */}
+
+        <section
+          id="connections"
+          className="section connections"
+        >
+
+          <div className="section-number">
+            03
+          </div>
+
+          <div className="section-title">
+
+            <p className="section-label">
+              OUR CONNECTIONS
+            </p>
+
+            <h2>
+              Better work
+              <br />
+              <em>together.</em>
+            </h2>
+
+          </div>
+
+
+          <div className="connection-grid">
+
+            <div className="connection-card">
+              <span>01</span>
+
+              <h3>
+                Olin Community
+              </h3>
+
+              <p>
+                Students and faculty contribute
+                engineering, design, research,
+                and interdisciplinary perspectives.
+              </p>
+            </div>
+
+
+            <div className="connection-card">
+              <span>02</span>
+
+              <h3>
+                Research Participants
+              </h3>
+
+              <p>
+                People with disabilities help us
+                understand real experiences,
+                challenges, and opportunities.
+              </p>
+            </div>
+
+
+            <div className="connection-card">
+              <span>03</span>
+
+              <h3>
+                Industry
+              </h3>
+
+              <p>
+                Connections with organizations
+                can help translate research into
+                practical technologies and tools.
+              </p>
+            </div>
+
+
+            <div className="connection-card">
+              <span>04</span>
+
+              <h3>
+                Accessibility Community
+              </h3>
+
+              <p>
+                We learn from the broader
+                accessibility and assistive
+                technology community.
+              </p>
             </div>
 
           </div>
@@ -282,368 +391,275 @@ function App() {
         </section>
 
 
-        {/* FEATURE PROJECT */}
+        {/* =========================
+            HISTORY
+        ========================= */}
 
         <section
-          id="feature"
-          className="feature-project"
+          id="history"
+          className="history"
         >
 
-          <div className="feature-image">
+          <div className="history-heading">
 
-            <div className="image-placeholder">
-
-              <Accessibility size={42} />
-
-              <span>
-                LAB PROJECT
-              </span>
-
-              <small>
-                Replace with a project image
-              </small>
-
-            </div>
-
-          </div>
-
-          <div className="feature-info">
-
-            <div className="section-label">
-              02 / CURRENT WORK
-            </div>
-
-            <p className="kicker">
-              RESEARCH • DESIGN • ACCESSIBILITY
+            <p className="section-label">
+              04 / OUR HISTORY
             </p>
 
             <h2>
-              TECHNOLOGY
+              Where we've
               <br />
-              <em>FOR PEOPLE.</em>
+              <em>been.</em>
             </h2>
 
             <p>
-              Our projects investigate how
-              technology can better support
-              people with different abilities
-              and ways of interacting with
-              the world.
-            </p>
-
-            <div className="feature-stats">
-
-              <div>
-                <strong>01</strong>
-                <span>
-                  HUMAN-CENTERED
-                </span>
-              </div>
-
-              <div>
-                <strong>∞</strong>
-                <span>
-                  POSSIBILITIES
-                </span>
-              </div>
-
-              <div>
-                <strong>100%</strong>
-                <span>
-                  ACCESSIBLE THINKING
-                </span>
-              </div>
-
-            </div>
-
-            <a
-              href="#approach"
-              className="button button-dark"
-            >
-              How We Work
-              <ArrowRight size={18} />
-            </a>
-
-          </div>
-
-        </section>
-
-
-        {/* RESEARCH */}
-
-        <section
-          id="research"
-          className="section research"
-        >
-
-          <div className="section-heading">
-
-            <div className="section-label">
-              03 / RESEARCH
-            </div>
-
-            <h2>
-              We ask
-              <br />
-              <em>better questions.</em>
-            </h2>
-
-          </div>
-
-          <div className="project-grid">
-
-            {researchAreas.map((project) => {
-
-              const Icon = project.icon;
-
-              return (
-                <article
-                  className="project-card"
-                  key={project.number}
-                >
-
-                  <span className="project-number">
-                    {project.number}
-                  </span>
-
-                  <Icon
-                    className="project-icon"
-                    size={34}
-                  />
-
-                  <h3>
-                    {project.title}
-                  </h3>
-
-                  <p>
-                    {project.description}
-                  </p>
-
-                  <ArrowRight
-                    className="project-arrow"
-                    size={20}
-                  />
-
-                </article>
-              );
-
-            })}
-
-          </div>
-
-        </section>
-
-
-        {/* APPROACH */}
-
-        <section
-          id="approach"
-          className="section approach"
-        >
-
-          <div className="section-heading centered">
-
-            <div className="section-label">
-              04 / OUR APPROACH
-            </div>
-
-            <h2>
-              Research.
-              <br />
-              <em>Design. Iterate.</em>
-            </h2>
-
-            <p>
-              Accessibility is not something
-              added at the end of a project.
-              It is part of the process from
-              the beginning.
+              The lab continues to grow through
+              research, student projects, and
+              collaborations focused on accessibility.
             </p>
 
           </div>
+
 
           <div className="timeline">
 
-            {process.map((item) => (
+            <div className="timeline-item">
 
-              <article
-                className="timeline-item"
-                key={item.number}
-              >
+              <div className="timeline-year">
+                BEGIN
+              </div>
 
-                <div className="timeline-dot" />
+              <div>
+                <h3>
+                  Building the Lab
+                </h3>
 
-                <div className="timeline-number">
-                  {item.number}
-                </div>
+                <p>
+                  Olin students and researchers
+                  began exploring assistive technology
+                  through hands-on projects and
+                  accessibility-focused research.
+                </p>
+              </div>
 
-                <div>
+            </div>
 
-                  <h3>
-                    {item.title}
-                  </h3>
 
-                  <p>
-                    {item.description}
-                  </p>
+            <div className="timeline-item">
 
-                </div>
+              <div className="timeline-year">
+                RESEARCH
+              </div>
 
-              </article>
+              <div>
+                <h3>
+                  Learning From Users
+                </h3>
 
-            ))}
+                <p>
+                  Research expanded to include
+                  conversations and interviews with
+                  people with disabilities to better
+                  understand their experiences with
+                  technology.
+                </p>
+              </div>
+
+            </div>
+
+
+            <div className="timeline-item">
+
+              <div className="timeline-year">
+                TODAY
+              </div>
+
+              <div>
+                <h3>
+                  Growing Through Collaboration
+                </h3>
+
+                <p>
+                  Current work combines accessibility,
+                  human-centered research, engineering,
+                  and design to investigate new
+                  assistive technologies.
+                </p>
+              </div>
+
+            </div>
+
+
+            <div className="timeline-item">
+
+              <div className="timeline-year">
+                NEXT
+              </div>
+
+              <div>
+                <h3>
+                  Expanding Possibilities
+                </h3>
+
+                <p>
+                  We are continuing to build
+                  partnerships, develop projects,
+                  and create opportunities for
+                  students to contribute to
+                  accessible technology research.
+                </p>
+              </div>
+
+            </div>
 
           </div>
 
         </section>
 
 
-        {/* TEAM */}
+        {/* =========================
+            SPONSOR
+        ========================= */}
 
         <section
-          id="team"
-          className="section team"
+          id="sponsor"
+          className="sponsor"
         >
 
-          <div className="team-copy">
+          <div className="sponsor-image">
 
-            <div className="section-label">
-              05 / THE LAB
-            </div>
+            <img
+              src="/images/oat-logo.png"
+              alt="oat lab logo"
+            />
+
+            <div className="sponsor-image-overlay" />
+
+          </div>
+
+
+          <div className="sponsor-content">
+
+            <p className="section-label">
+              05 / SUPPORT THE LAB
+            </p>
 
             <h2>
-              Different
+              Sponsor
               <br />
-              <em>perspectives.</em>
+              <em>our work.</em>
             </h2>
 
-            <p>
-              Students, researchers,
-              faculty, and collaborators
-              bring different experiences
-              and areas of expertise to
-              our work.
+            <p className="sponsor-lead">
+              Help students and researchers
+              explore new possibilities in
+              accessible and assistive technology.
             </p>
+
+            <p>
+              Support can take many forms,
+              including financial contributions,
+              equipment, technical expertise,
+              mentorship, research partnerships,
+              and opportunities for students.
+            </p>
+
+
+            <div className="support-options">
+
+              <div>
+                <strong>
+                  Funding
+                </strong>
+
+                <span>
+                  Support research and prototypes.
+                </span>
+              </div>
+
+              <div>
+                <strong>
+                  Equipment
+                </strong>
+
+                <span>
+                  Provide tools and technology.
+                </span>
+              </div>
+
+              <div>
+                <strong>
+                  Mentorship
+                </strong>
+
+                <span>
+                  Share expertise with students.
+                </span>
+              </div>
+
+              <div>
+                <strong>
+                  Partnership
+                </strong>
+
+                <span>
+                  Collaborate on accessibility research.
+                </span>
+              </div>
+
+            </div>
+
 
             <a
               href="#contact"
-              className="button button-dark"
+              className="dark-button"
             >
-              Meet the Lab
+              Become a Partner
               <ArrowRight size={18} />
             </a>
 
           </div>
 
-          <div className="team-collage">
-
-            <div className="team-photo tall">
-              LAB PHOTO
-            </div>
-
-            <div className="team-photo">
-              RESEARCH
-            </div>
-
-            <div className="team-photo">
-              PROTOTYPING
-            </div>
-
-          </div>
-
         </section>
 
 
-        {/* PARTNERS */}
-
-        <section
-          id="partners"
-          className="section partners"
-        >
-
-          <div className="section-heading centered">
-
-            <div className="section-label">
-              06 / COLLABORATION
-            </div>
-
-            <h2>
-              Built through
-              <br />
-              <em>collaboration.</em>
-            </h2>
-
-            <p>
-              Meaningful assistive technology
-              grows from collaboration between
-              researchers, designers, engineers,
-              users, and communities.
-            </p>
-
-          </div>
-
-          <div className="partner-grid">
-
-            <div className="partner">
-              OLIN
-            </div>
-
-            <div className="partner">
-              RESEARCH
-            </div>
-
-            <div className="partner">
-              COMMUNITY
-            </div>
-
-            <div className="partner">
-              INDUSTRY
-            </div>
-
-            <div className="partner">
-              ACCESSIBILITY
-            </div>
-
-          </div>
-
-        </section>
-
-
-        {/* CONTACT */}
+        {/* =========================
+            CONTACT
+        ========================= */}
 
         <section
           id="contact"
           className="contact"
         >
 
-          <div className="contact-inner">
+          <div className="contact-heading">
 
-            <div>
+            <p className="section-label">
+              06 / CONTACT
+            </p>
 
-              <div className="section-label">
-                07 / CONTACT
-              </div>
+            <h2>
+              Let's connect.
+            </h2>
 
-              <h2>
-                Let's make
-                <br />
-                <em>technology accessible.</em>
-              </h2>
+            <p>
+              Interested in our research,
+              collaborating with the lab,
+              sponsoring our work, or getting
+              involved as a student?
+            </p>
 
-              <p>
-                Interested in our research,
-                collaborating with the lab,
-                or learning more about our
-                projects?
-              </p>
+          </div>
 
-            </div>
 
-            <form
-              onSubmit={(event) =>
-                event.preventDefault()
-              }
-            >
+          <form
+            className="contact-form"
+            onSubmit={(event) =>
+              event.preventDefault()
+            }
+          >
+
+            <div className="form-row">
 
               <label>
                 Name
@@ -655,6 +671,7 @@ function App() {
                 />
               </label>
 
+
               <label>
                 Email
 
@@ -665,70 +682,68 @@ function App() {
                 />
               </label>
 
-              <label>
-                Organization
+            </div>
 
-                <input
-                  type="text"
-                  placeholder="Organization"
-                />
-              </label>
 
-              <label>
-                Message
+            <label>
+              Organization
 
-                <textarea
-                  rows="5"
-                  placeholder="Tell us about your interest..."
-                />
-              </label>
+              <input
+                type="text"
+                placeholder="Organization or school"
+              />
+            </label>
 
-              <button
-                type="submit"
-                className="button button-primary"
-              >
-                Send Message
-                <ArrowRight size={18} />
-              </button>
 
-            </form>
+            <label>
+              How can we help?
 
-          </div>
+              <textarea
+                rows="5"
+                placeholder="Tell us about your interest..."
+              />
+            </label>
+
+
+            <button
+              type="submit"
+              className="submit-button"
+            >
+              Send Message
+              <ArrowRight size={18} />
+            </button>
+
+          </form>
 
         </section>
 
       </main>
 
 
-      {/* FOOTER */}
+      {/* =========================
+          FOOTER
+      ========================= */}
 
       <footer>
 
-        <div className="footer-brand">
+        <img
+          src="/images/oat-logo.png"
+          alt="Olin Assistive Technology Lab"
+        />
 
-          <span className="brand-logo">
-            OAT
+        <div>
+          <strong>
+            OLIN ASSISTIVE TECHNOLOGY LAB
+          </strong>
+
+          <span>
+            Olin College of Engineering
           </span>
-
-          <div>
-
-            <strong>
-              OLIN ASSISTIVE TECHNOLOGY LAB
-            </strong>
-
-            <small>
-              Human-centered.
-              Accessible.
-              Inclusive.
-            </small>
-
-          </div>
-
         </div>
 
-        <p>
-          Olin College of Engineering
-        </p>
+        <a href="#home">
+          Back to top ↑
+        </a>
 
       </footer>
 
