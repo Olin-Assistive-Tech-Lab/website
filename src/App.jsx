@@ -596,9 +596,9 @@ function App() {
           <div className="sponsor-image">
 
             <img
-              src={`${import.meta.env.BASE_URL}/images/oat-logo.png`}
-              alt="oat lab logo"
-            />
+  src={`${import.meta.env.BASE_URL}images/oat-logo.png`}
+  alt="OAT Lab logo"
+/>
 
             <div className="sponsor-image-overlay" />
 
