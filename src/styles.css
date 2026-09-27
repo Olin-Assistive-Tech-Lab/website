@@ -277,18 +277,18 @@ textarea {
 .section {
   padding: 120px 7vw;
 
-  display: grid;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
-  grid-template-columns: 70px .8fr 1fr;
-
-  gap: 45px;
+  text-align: center;
 }
 
 .section-number {
+  margin-bottom: 18px;
+
   font-family: var(--heading);
-
   font-size: 24px;
-
   color: var(--gray);
 }
 
@@ -297,8 +297,7 @@ textarea {
 
   color: var(--gray);
 
-  font-size: 10px;
-
+  font-size: 50px;
   font-weight: 700;
 
   letter-spacing: 2px;
@@ -306,28 +305,18 @@ textarea {
   text-transform: uppercase;
 }
 
-h2 {
-  margin: 0;
+.section-title {
+  max-width: 850px;
 
-  font-family: var(--heading);
-
-  font-size: clamp(55px, 7vw, 100px);
-
-  line-height: .86;
-
-  text-transform: uppercase;
-
-  letter-spacing: -2px;
-}
-
-h2 em {
-  color: var(--gray);
-
-  font-style: normal;
+  margin: 0 auto;
 }
 
 .about-content {
-  max-width: 600px;
+  max-width: 700px;
+
+  margin: 45px auto 0;
+
+  text-align: center;
 }
 
 .about-content p {
@@ -549,6 +538,107 @@ h2 em {
   color: var(--gray);
 
   line-height: 1.7;
+}
+
+/* =========================
+   SUPPORT 
+========================= */
+
+.support-section {
+  padding: 70px 7vw;
+  background: #f5f6f7;
+}
+
+.support-card {
+  max-width: 720px;
+  margin: 0 auto;
+
+  padding: 25px;
+
+  background: white;
+
+  border: 1px solid #d9d9d9;
+  border-radius: 5px;
+
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.08);
+
+  text-align: center;
+}
+
+.support-label {
+  margin: 0 0 8px;
+
+  color: #68cfc0;
+
+  font-size: 16px;
+  font-weight: 700;
+
+  letter-spacing: 1.5px;
+
+  text-align: left;
+}
+
+.support-card h2 {
+  margin: 5px 0 30px;
+
+  color: #111827;
+
+  font-size: 32px;
+  font-weight: 700;
+
+  line-height: 1.2;
+
+  text-transform: none;
+}
+
+
+/* Yellow donation button */
+
+.donate-button {
+  display: block;
+
+  width: 100%;
+
+  padding: 24px 20px;
+
+  background: #68cfc0;
+
+  color: white;
+
+  border-radius: 6px;
+
+  font-size: 21px;
+  font-weight: 700;
+
+  text-align: center;
+
+  text-decoration: none;
+
+  transition:
+    background 0.2s ease,
+    transform 0.2s ease;
+}
+
+
+/* Hover effect */
+
+.donate-button:hover {
+  background: #68cfc0;
+
+  transform: translateY(-2px);
+}
+
+
+/* Text underneath */
+
+.support-description {
+  margin: 25px 0 25px;
+
+  color: #667085;
+
+  font-size: 15px;
+
+  line-height: 1.6;
 }
 
 

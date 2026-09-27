@@ -141,7 +141,57 @@ function App() {
         {/* =========================
             SUPPORT US
         ========================= */}
-        
+        <section 
+        className="section "
+        >
+          <div className="section-number">
+            01
+          </div>
+
+          <div className="section-title">
+            <p className="section-label">
+              SUPPORT US
+            </p>
+          </div>
+
+          <div className="about-content">
+
+            <p className="lead">
+              We are currently dedicated to designing an open source braille learning device for those who have recently lost their vision and are in the process of learning Braille. 
+            </p>
+            <p>
+              By developing this device from scratch with its users in mind, we make impact a tangible part of our engineering and design process. To create it, the team will interact with the visually impaired community both to volunteer and to understand their issues that we could solve with our device. But we need your help. 
+            </p>
+          </div>
+
+        </section>
+        <section className="support-section">
+  <div className="support-card">
+
+    <p className="support-label">
+      SUPPORT OUR TEAM
+    </p>
+
+    <h2>
+      Help Us Build Our Braille Device!
+    </h2>
+
+    <a
+      href="https://www.olin.edu/oat"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="donate-button"
+    >
+      Donate via Olin.edu
+    </a>
+
+    <p className="support-description">
+      You will be directed to the official Olin College website.
+    </p>
+
+  </div>
+</section>
+
 
 
         {/* =========================
@@ -154,20 +204,16 @@ function App() {
         >
 
           <div className="section-number">
-            01
+            02
           </div>
 
           <div className="section-title">
             <p className="section-label">
               ABOUT THE LAB
             </p>
+            </div>
 
-            <h2>
-              Technology
-              <br />
-              <em>for everyone.</em>
-            </h2>
-          </div>
+  
 
           <div className="about-content">
 
