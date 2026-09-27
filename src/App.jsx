@@ -30,9 +30,9 @@ function App() {
           onClick={closeMenu}
         >
           <img
-            src="/images/oat-logo.png"
-            alt="Olin Assistive Technology Lab"
-          />
+  src={`${import.meta.env.BASE_URL}images/oat-logo.png`}
+  alt="Olin Assistive Technology Lab"
+/>
         </a>
 
         <button
