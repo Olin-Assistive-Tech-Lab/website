@@ -596,7 +596,7 @@ function App() {
           <div className="sponsor-image">
 
             <img
-              src="/images/oat-logo.png"
+              src={`${import.meta.env.BASE_URL}/images/oat-logo.png`}
               alt="oat lab logo"
             />
 
