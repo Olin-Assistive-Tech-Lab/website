@@ -209,37 +209,23 @@ function App() {
 
           <div className="section-title">
             <p className="section-label">
-              ABOUT THE LAB
+              ABOUT US
+            </p>
+            </div>
+  
+          <div className="about-content">
+
+            <p>
+              OAT Lab is dedicated to advancing the frontiers of assistive technology and medical device innovation. Our mission is to research, ideate, and design affordable cutting-edge technologies that seamlessly integrate with the human body, improving quality of life and empowering individuals by enhancing how they interact with the world.
             </p>
             </div>
 
-  
-
-          <div className="about-content">
-
-            <p className="lead">
-              The Olin Assistive Technology Lab
-              explores the intersection of people,
-              technology, and accessibility.
-            </p>
-
-            <p>
-              We investigate how people with
-              different abilities experience
-              technology and use those insights
-              to explore new approaches to
-              assistive technology, accessible
-              interfaces, and human-centered
-              design.
-            </p>
-
-            <p>
-              Our work brings together students,
-              researchers, faculty, and community
-              members to learn from lived
-              experiences and develop technology
-              around real human needs.
-            </p>
+            <div style={{ display: 'flex', justifyContent: 'center' }}>
+            <img 
+    src="/images/pic-3.png" 
+    style={{ width: '80%', height: 'auto', borderRadius: '8px' }} 
+    alt="OAT Lab Team 2025-2026 School Year Second Version" 
+  />
 
           </div>
 
@@ -269,20 +255,45 @@ function App() {
 
           </div>
 
+          <div style={{ display: 'flex', justifyContent: 'center' }}>
+            <img 
+    src="/images/device.png" 
+    style={{ width: '60%', height: 'auto', borderRadius: '8px' }} 
+    alt="OAT Lab Team 2025-2026 School Year Second Version" 
+  />
+  <br></br>
+        </div>
+
+        <div className="about-content">
+
+            <p>
+              A jumbo Braille learning device designed specially for those who have recently gone blind. The project will have features such as lost device notifications, loadable lessons, portability, and more technical features as-well. The project will have features such as Audio Feedback, Speech to Braille, Haptic Feedback, an 8-12 hour battery life, physical buttons for interface, bluetooth compatibility, and Document Memory Storage.
+            </p>
+            </div>
+
+                <p className="support-label" style={{ textAlign: 'center', fontSize: '35px' }}>
+  OUR SUB-TEAMS
+</p>
+
+
+
           <div className="goals-grid">
 
             <article className="goal">
 
               <span>01</span>
+              <img 
+    src="/images/design-placeholder.png" 
+    style={{ width: '90%', height: 'auto', borderRadius: '3px', display: 'block', margin: '0 auto' }} 
+    alt="OAT Lab Team 2025-2026 School Year Second Version" 
+  />
 
               <h3>
-                Understand
+                User Interface, User Experience, & Design
               </h3>
 
               <p>
-                Learn from people with disabilities
-                and understand the barriers they
-                encounter when using technology.
+                Responsible for modelling a comfortable, usable interface in simulation, working with users to improve it, and owning the form factor and hardware space assignments. 
               </p>
 
             </article>
@@ -292,14 +303,18 @@ function App() {
 
               <span>02</span>
 
+              <img 
+    src="/images/firm-placeholder.png" 
+    style={{ width: '90%', height: 'auto', borderRadius: '3px', display: 'block', margin: '0 auto' }} 
+    alt="OAT Lab Team 2025-2026 School Year Second Version" 
+  />
+
               <h3>
-                Design
+                Software/Firmware Development
               </h3>
 
               <p>
-                Explore accessible interfaces,
-                assistive technologies, and
-                human-centered design approaches.
+                Responsible for software simulation of the device, compiling high-level code down to the hardware, speech recognition, braille output, and reaching the Machine Learning Model on and off wifi. 
               </p>
 
             </article>
@@ -309,14 +324,18 @@ function App() {
 
               <span>03</span>
 
+              <img 
+    src="/images/mech-placeholder.png" 
+    style={{ width: '90%', height: 'auto', borderRadius: '3px', display: 'block', margin: '0 auto' }} 
+    alt="OAT Lab Team 2025-2026 School Year Second Version" 
+  />
+
               <h3>
-                Prototype
+                Mechanical & Actuation
               </h3>
 
               <p>
-                Turn research insights into
-                tangible concepts and technologies
-                that can be explored and tested.
+                Responsible for Validating designs and fabricating everything mechanical & actuation based including electromagnets, cells, small parts, form factor (shared with UI,UX,Design) plus potential partnerships for smaller 3D printing. 
               </p>
 
             </article>
@@ -326,14 +345,18 @@ function App() {
 
               <span>04</span>
 
+              <img 
+    src="/images/hardware-placeholder.png" 
+    style={{ width: '90%', height: 'auto', borderRadius: '3px', display: 'block', margin: '0 auto' }} 
+    alt="OAT Lab Team 2025-2026 School Year Second Version" 
+  />
+
               <h3>
-                Empower
+                Hardware
               </h3>
 
               <p>
-                Help create technology that gives
-                people greater choice, independence,
-                and participation.
+                Responsible for Circuit design and PCB assembly of the battery management system, the main board, the cell actuation boards. Breadboard and proto board prototypes, plus libraries the rest of the team can use. 
               </p>
 
             </article>
@@ -376,6 +399,12 @@ function App() {
             <div className="connection-card">
               <span>01</span>
 
+              <img 
+    src="/images/olin.webp" 
+    style={{ width: '80%', height: 'auto', borderRadius: '3px', display: 'block', margin: '0 auto' }} 
+    alt="OAT Lab Team 2025-2026 School Year Second Version" 
+  />
+
               <h3>
                 Olin Community
               </h3>
@@ -391,44 +420,36 @@ function App() {
             <div className="connection-card">
               <span>02</span>
 
+              <img 
+    src="/images/carroll.png" 
+    style={{ width: '80%', height: 'auto', borderRadius: '3px', display: 'block', margin: '0 auto' }} 
+    alt="OAT Lab Team 2025-2026 School Year Second Version" 
+  />
+
               <h3>
-                Research Participants
+                The Carroll Center for the Blind
               </h3>
 
               <p>
-                People with disabilities help us
-                understand real experiences,
-                challenges, and opportunities.
+                The Carroll Center for the Blind is the foremost leader in vision rehabilitation services for individuals confronted by the challenges of vision loss. OAT Lab has taken initiative to interview people that are a part of here.
               </p>
             </div>
-
 
             <div className="connection-card">
               <span>03</span>
 
+              <img 
+    src="/images/perkins.png" 
+    style={{ width: '80%', height: 'auto', borderRadius: '3px', display: 'block', margin: '0 auto' }} 
+    alt="OAT Lab Team 2025-2026 School Year Second Version" 
+  />
+
               <h3>
-                Industry
+                Perkins School for the Blind
               </h3>
 
               <p>
-                Connections with organizations
-                can help translate research into
-                practical technologies and tools.
-              </p>
-            </div>
-
-
-            <div className="connection-card">
-              <span>04</span>
-
-              <h3>
-                Accessibility Community
-              </h3>
-
-              <p>
-                We learn from the broader
-                accessibility and assistive
-                technology community.
+                TPerkins helps children with disabilities find their place in the world. We are the worldwide leader in education services for children and young adults with disabilities. We believe every child can learn and learning is for life. OAT Lab has taken initiative to interview people that are a part of here.
               </p>
             </div>
 
