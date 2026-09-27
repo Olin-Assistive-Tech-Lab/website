@@ -98,7 +98,7 @@ function App() {
 
           <img
             className="hero-image"
-            src="/images/oat-banner.jpg"
+            src={`${import.meta.env.BASE_URL}images/oat-banner.jpg`}
             alt="Olin Assistive Technology Lab"
           />
 
@@ -131,7 +131,7 @@ function App() {
           </div>
 
           <img 
-    src="/images/oat-team-2025-2026.jpg" 
+    src={`${import.meta.env.BASE_URL}images/oat-team-2025-2026.jpg`}
     style={{ width: '40%', height: 'auto', borderRadius: '8px' }} 
     alt="OAT Lab Team 2025-2026 School Year" 
   />  
@@ -222,7 +222,7 @@ function App() {
 
             <div style={{ display: 'flex', justifyContent: 'center' }}>
             <img 
-    src="/images/pic-3.png" 
+    src={`${import.meta.env.BASE_URL}images/pic-3.png`}
     style={{ width: '80%', height: 'auto', borderRadius: '8px' }} 
     alt="OAT Lab Team 2025-2026 School Year Second Version" 
   />
@@ -257,7 +257,7 @@ function App() {
 
           <div style={{ display: 'flex', justifyContent: 'center' }}>
             <img 
-    src="/images/device.png" 
+    src={`${import.meta.env.BASE_URL}images/device.png`}
     style={{ width: '60%', height: 'auto', borderRadius: '8px' }} 
     alt="OAT Lab Team 2025-2026 School Year Second Version" 
   />
@@ -283,7 +283,7 @@ function App() {
 
               <span>01</span>
               <img 
-    src="/images/design-placeholder.png" 
+              src={`${import.meta.env.BASE_URL}images/design-placeholder.png`}
     style={{ width: '90%', height: 'auto', borderRadius: '3px', display: 'block', margin: '0 auto' }} 
     alt="OAT Lab Team 2025-2026 School Year Second Version" 
   />
@@ -304,7 +304,7 @@ function App() {
               <span>02</span>
 
               <img 
-    src="/images/firm-placeholder.png" 
+              src={`${import.meta.env.BASE_URL}images/firm-placeholder.png`}
     style={{ width: '90%', height: 'auto', borderRadius: '3px', display: 'block', margin: '0 auto' }} 
     alt="OAT Lab Team 2025-2026 School Year Second Version" 
   />
@@ -325,7 +325,7 @@ function App() {
               <span>03</span>
 
               <img 
-    src="/images/mech-placeholder.png" 
+    src={`${import.meta.env.BASE_URL}images/mech-placeholder.png`}
     style={{ width: '90%', height: 'auto', borderRadius: '3px', display: 'block', margin: '0 auto' }} 
     alt="OAT Lab Team 2025-2026 School Year Second Version" 
   />
@@ -346,7 +346,7 @@ function App() {
               <span>04</span>
 
               <img 
-    src="/images/hardware-placeholder.png" 
+    src={`${import.meta.env.BASE_URL}images/hardware-placeholder.png`}
     style={{ width: '90%', height: 'auto', borderRadius: '3px', display: 'block', margin: '0 auto' }} 
     alt="OAT Lab Team 2025-2026 School Year Second Version" 
   />
@@ -400,7 +400,7 @@ function App() {
               <span>01</span>
 
               <img 
-    src="/images/olin.webp" 
+    src={`${import.meta.env.BASE_URL}images/olin.webp`}
     style={{ width: '80%', height: 'auto', borderRadius: '3px', display: 'block', margin: '0 auto' }} 
     alt="OAT Lab Team 2025-2026 School Year Second Version" 
   />
@@ -421,7 +421,7 @@ function App() {
               <span>02</span>
 
               <img 
-    src="/images/carroll.png" 
+    src={`${import.meta.env.BASE_URL}images/carroll.png`}
     style={{ width: '80%', height: 'auto', borderRadius: '3px', display: 'block', margin: '0 auto' }} 
     alt="OAT Lab Team 2025-2026 School Year Second Version" 
   />
@@ -439,7 +439,7 @@ function App() {
               <span>03</span>
 
               <img 
-    src="/images/perkins.png" 
+    src={`${import.meta.env.BASE_URL}images/perkins.png`} 
     style={{ width: '80%', height: 'auto', borderRadius: '3px', display: 'block', margin: '0 auto' }} 
     alt="OAT Lab Team 2025-2026 School Year Second Version" 
   />
@@ -596,7 +596,7 @@ function App() {
           <div className="sponsor-image">
 
             <img
-              src="/images/oat-logo.png"
+              src={`${import.meta.env.BASE_URL}images/oat-logo.png`}
               alt="oat lab logo"
             />
 
@@ -794,7 +794,7 @@ function App() {
       <footer>
 
         <img
-          src="/images/oat-logo.png"
+          src={`${import.meta.env.BASE_URL}images/oat-logo.png`}
           alt="Olin Assistive Technology Lab"
         />
 
