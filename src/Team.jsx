@@ -15,50 +15,60 @@ function Team() {
       title: "Leadership",
       members: [
         {
-          name: "Member Name",
-          role: "Lab Lead",
-          image: "member1.jpg",
+          name: "Brandon Spiller",
+          role: "Project Manager",
+          image: "brandon.jpg",
         },
         {
-          name: "Member Name",
-          role: "Project Lead",
-          image: "member2.jpg",
+          name: "Quinn Verrill",
+          role: "Project Manager Emeritus",
+          image: "quinn.jpg",
         },
         {
-          name: "Member Name",
-          role: "Research Lead",
-          image: "member3.jpg",
+          name: "Ramzey Burdette",
+          role: "Software/Firmware Development Lead",
+          image: "rami.jpg",
         },
         {
-          name: "Member Name",
-          role: "Team Lead",
-          image: "member4.jpg",
+          name: "Tierra Raiti",
+          role: "Hardware Lead",
+          image: "tierra.jpg",
+        },
+        {
+          name: "Titilayo Oshinowo",
+          role: "UI,UX, & Design Lead",
+          image: "titi.jpg",
+        },
+        {
+          name: "Trevor McDonald",
+          role: "External Outreach Lead",
+          image: "trevor.jpg",
+        },
+        {
+          name: "Emma Larouche",
+          role: "Mechanical & Actuation Lead",
+          image: "emma.jpg",
+        },
+        {
+          name: "Douglas Sanchez",
+          role: "Internal Outreach Lead",
+          image: "douglas.jpg",
         },
       ],
     },
 
     {
-      title: "Mechanical",
+      title: "Hardware",
       members: [
         {
-          name: "Member Name",
-          role: "Mechanical Design",
-          image: "member5.jpg",
+          name: "Eleane Lin",
+          role: "Hardware",
+          image: "eleane.jpg",
         },
         {
-          name: "Member Name",
+          name: "Christ-Ismael Kone",
           role: "Mechanical Engineering",
-          image: "member6.jpg",
-        },
-        {
-          name: "Member Name",
-          role: "Mechanical Design",
-          image: "member7.jpg",
-        },
-        {
-          name: "Member Name",
-          role: "Mechanical Engineering",
-          image: "member8.jpg",
+          image: "christ.jpg",
         },
       ],
     },
@@ -67,22 +77,22 @@ function Team() {
       title: "Software / Firmware",
       members: [
         {
-          name: "Member Name",
-          role: "Software",
-          image: "member9.jpg",
+          name: "Evi Shih",
+          role: "Software / Firmware",
+          image: "evi.jpg",
         },
         {
-          name: "Member Name",
-          role: "Firmware",
-          image: "member10.jpg",
+          name: "Alexandre Picard",
+          role: "Software / Firmware",
+          image: "xandre.jpg",
         },
         {
-          name: "Member Name",
-          role: "Software",
-          image: "member11.jpg",
+          name: "Alex Solis",
+          role: "Software / Firmware",
+          image: "alex.jpg",
         },
         {
-          name: "Member Name",
+          name: "Sriya Buddharaju",
           role: "Firmware",
           image: "member12.jpg",
         },
@@ -93,50 +103,50 @@ function Team() {
       title: "UI/UX & Design",
       members: [
         {
-          name: "Member Name",
+          name: "Eiley Shat",
           role: "UI/UX Design",
-          image: "member13.jpg",
+          image: "eiley.jpg",
         },
         {
-          name: "Member Name",
-          role: "User Research",
-          image: "member14.jpg",
+          name: "Saraya Perdios",
+          role: "UI/UX Design",
+          image: "saraya.jpg",
         },
         {
-          name: "Member Name",
-          role: "Product Design",
-          image: "member15.jpg",
+          name: "Lina Pu",
+          role: "UI/UX Design",
+          image: "lina.jpg",
         },
         {
-          name: "Member Name",
-          role: "Visual Design",
-          image: "member16.jpg",
+          name: "Kylie Sayre",
+          role: "UI/UX Design",
+          image: "kylie.jpg",
         },
       ],
     },
 
     {
-      title: "Hardware",
+      title: "Mechanical & Actuation",
       members: [
         {
-          name: "Member Name",
-          role: "Hardware Engineering",
-          image: "member17.jpg",
+          name: "Anna Brown",
+          role: "Mechanical & Actuation",
+          image: "anna.jpg",
         },
         {
-          name: "Member Name",
-          role: "Electronics",
-          image: "member18.jpg",
+          name: "Audrey Garfield",
+          role: "Mechanical & Actuation",
+          image: "audrey.jpg",
         },
         {
-          name: "Member Name",
-          role: "Device Interaction",
-          image: "member19.jpg",
+          name: "Oliver Loffer",
+          role: "Mechanical & Actuation",
+          image: "oliver.jpg",
         },
         {
-          name: "Member Name",
-          role: "Hardware Engineering",
-          image: "member20.jpg",
+          name: "Spencer Fieldroy",
+          role: "Mechanical & Actuation",
+          image: "spencer.jpg",
         },
       ],
     },
@@ -241,12 +251,12 @@ function Team() {
         <section className="team-intro">
 
           <h1>
-            OUR AMAZING TEAM
+            OUR WONDERFUL TEAM
           </h1>
 
           <p>
-            Our team of students, researchers, and collaborators
-            design, build, and explore the future of assistive technology.
+            Our team of engineers research design, build, and explore the
+            future of assistive technology.
           </p>
 
         </section>
