@@ -131,9 +131,9 @@ function App() {
           </div>
 
           <img 
-    src={`${import.meta.env.BASE_URL}images/oat-team.jpg`}
+    src={`${import.meta.env.BASE_URL}images/oat-team-2026-2027.jpg`}
     style={{ width: '40%', height: 'auto', borderRadius: '8px' }} 
-    alt="OAT Lab Team 2025-2026 School Year" 
+    alt="OAT Lab Team 2026-2027 School Year" 
   />  
 
         </section>
@@ -222,7 +222,7 @@ function App() {
 
             <div style={{ display: 'flex', justifyContent: 'center' }}>
             <img 
-    src={`${import.meta.env.BASE_URL}images/oat-team-other.jpg`}
+    src={`${import.meta.env.BASE_URL}images/oat-team-2026-2027.jpg`}
     style={{ width: '80%', height: 'auto', borderRadius: '8px' }} 
     alt="OAT Lab Team 2026-2027 School Year Second Version" 
   />
