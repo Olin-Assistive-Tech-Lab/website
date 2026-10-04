@@ -816,6 +816,324 @@ textarea {
   margin-top: 10px;
 }
 
+/* =========================================================
+   OAT TEAM PAGE
+   ========================================================= */
+
+.team-page {
+  min-height: 100vh;
+  background: #ffffff;
+  color: #25282a;
+}
+
+
+/* =========================================================
+   TEAM INTRO
+   ========================================================= */
+
+.team-intro {
+  text-align: center;
+
+  padding: 65px 30px 110px;
+}
+
+.team-intro h1 {
+  margin: 0;
+
+  color: #25282a;
+
+  font-size: clamp(3.2rem, 6vw, 5rem);
+
+  font-weight: 800;
+
+  letter-spacing: 2px;
+
+  line-height: 1.05;
+}
+
+.team-intro p {
+  max-width: 1000px;
+
+  margin: 25px auto 0;
+
+  color: #65788a;
+
+  font-family: Georgia, "Times New Roman", serif;
+
+  font-size: clamp(1.15rem, 2vw, 1.5rem);
+
+  font-style: italic;
+
+  line-height: 1.6;
+}
+
+
+/* =========================================================
+   TEAM SECTIONS
+   ========================================================= */
+
+.team-section {
+  max-width: 1250px;
+
+  margin: 0 auto;
+
+  padding: 45px 30px 105px;
+}
+
+.team-section h2 {
+  margin: 0 0 50px;
+
+  text-align: center;
+
+  color: #65788a;
+
+  font-size: 2.5rem;
+
+  font-weight: 700;
+}
+
+
+/* =========================================================
+   MEMBER GRID
+   ========================================================= */
+
+.team-members {
+  display: grid;
+
+  grid-template-columns: repeat(4, 1fr);
+
+  justify-items: center;
+
+  gap: 45px;
+}
+
+
+/* =========================================================
+   MEMBER
+   ========================================================= */
+
+.team-member {
+  width: 220px;
+
+  text-align: center;
+}
+
+
+/* =========================================================
+   MEMBER IMAGE
+   ========================================================= */
+
+.team-member img {
+  display: block;
+
+  width: 220px;
+  height: 220px;
+
+  margin: 0 auto 22px;
+
+  border-radius: 50%;
+
+  object-fit: cover;
+
+  background: #ddd;
+}
+
+
+/* =========================================================
+   NAME
+   ========================================================= */
+
+.team-member h3 {
+  margin: 0;
+
+  color: #25282a;
+
+  font-size: 1.25rem;
+
+  font-weight: 700;
+}
+
+
+/* =========================================================
+   ROLE
+   ========================================================= */
+
+.team-member p {
+  margin: 8px 0 0;
+
+  color: #65788a;
+
+  font-size: 1rem;
+}
+
+
+/* =========================================================
+   TABLET
+   ========================================================= */
+
+@media (max-width: 1100px) {
+
+  .team-header {
+    padding: 0 4%;
+  }
+
+  .team-header-nav {
+    gap: 20px;
+  }
+
+  .team-members {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 800px) {
+
+  .team-header {
+    height: auto;
+
+    min-height: 100px;
+
+    padding: 18px 25px;
+
+    flex-direction: column;
+
+    gap: 18px;
+  }
+
+  .team-header-logo {
+    margin-right: 0;
+  }
+
+  .team-header-nav {
+    flex-wrap: wrap;
+
+    justify-content: center;
+
+    gap: 12px 20px;
+  }
+
+  .team-members {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+}
+
+
+@media (max-width: 550px) {
+
+  .team-header-nav {
+    gap: 8px 14px;
+  }
+
+  .team-header-nav a {
+    font-size: 11px;
+  }
+
+  .team-members {
+    grid-template-columns: 1fr;
+  }
+
+  .team-intro {
+    padding: 50px 20px 70px;
+  }
+
+  .team-intro h1 {
+    font-size: 2.7rem;
+  }
+
+}
+
+
+/* =========================================================
+   TABLET
+   ========================================================= */
+
+@media (max-width: 1050px) {
+
+  .team-members {
+    grid-template-columns: repeat(3, 1fr);
+
+    column-gap: 30px;
+  }
+
+}
+
+
+/* =========================================================
+   SMALL TABLET
+   ========================================================= */
+
+@media (max-width: 800px) {
+
+  .team-intro {
+    padding: 50px 25px 80px;
+  }
+
+  .team-section {
+    padding: 40px 25px 80px;
+  }
+
+  .team-members {
+    grid-template-columns: repeat(2, 1fr);
+
+    column-gap: 25px;
+  }
+
+}
+
+
+/* =========================================================
+   PHONE
+   ========================================================= */
+
+@media (max-width: 550px) {
+
+  .team-intro {
+    padding: 45px 20px 70px;
+  }
+
+  .team-intro h1 {
+    font-size: 2.7rem;
+
+    letter-spacing: 1px;
+  }
+
+  .team-intro p {
+    font-size: 1.1rem;
+  }
+
+  .team-section {
+    padding: 35px 20px 70px;
+  }
+
+  .team-section h2 {
+    font-size: 2rem;
+
+    margin-bottom: 40px;
+  }
+
+  .team-members {
+    grid-template-columns: 1fr;
+
+    row-gap: 45px;
+  }
+
+  .team-member {
+    width: 200px;
+  }
+
+  .team-member img {
+    width: 200px;
+    height: 200px;
+  }
+
+}
 
 /* =========================
    FOOTER

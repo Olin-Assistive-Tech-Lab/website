@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";;
 import {
   ArrowRight,
   Menu,
@@ -14,6 +14,23 @@ function App() {
   const closeMenu = () => {
     setMenuOpen(false);
   };
+
+  useEffect(() => {
+    if (window.location.hash) {
+      const id = window.location.hash.substring(1);
+
+      setTimeout(() => {
+        const element = document.getElementById(id);
+
+        if (element) {
+          element.scrollIntoView({
+            behavior: "smooth",
+            block: "start",
+          });
+        }
+      }, 100);
+    }
+  }, []);
 
   return (
     <div className="site">
@@ -77,9 +94,12 @@ function App() {
           <a href="#contact" onClick={closeMenu}>
             Contact
           </a>
-          <a href="#our-team" onClick={closeMenu}>
+          <a
+            href={`${import.meta.env.BASE_URL}team/`}
+            onClick={closeMenu}
+          >
             Our Team
-          </a>
+        </a>
         </nav>
 
       </header>
