@@ -222,7 +222,7 @@ function App() {
 
             <div style={{ display: 'flex', justifyContent: 'center' }}>
             <img 
-    src={`${import.meta.env.BASE_URL}images/oat-team-other'.jpg`}
+    src={`${import.meta.env.BASE_URL}images/oat-team-other.jpg`}
     style={{ width: '80%', height: 'auto', borderRadius: '8px' }} 
     alt="OAT Lab Team 2026-2027 School Year Second Version" 
   />
