@@ -222,8 +222,8 @@ function Team() {
     </a>
 
     <a
-      href={`${base}team/`}
-      onClick={closeMenu}
+    href={`${base}#team`}
+    onClick={closeMenu}
     >
       Our Team
     </a>

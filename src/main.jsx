@@ -8,10 +8,14 @@ import "./styles.css";
 
 const path = window.location.pathname;
 
-console.log("Current path:", path);
+const isTeamPage =
+  path === "/website/team/" ||
+  path === "/website/team" ||
+  path.endsWith("/team/") ||
+  path.endsWith("/team");
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-    {path.includes("/team/") ? <Team /> : <App />}
+    {isTeamPage ? <Team /> : <App />}
   </React.StrictMode>
 );

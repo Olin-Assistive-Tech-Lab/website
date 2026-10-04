@@ -95,10 +95,10 @@ function App() {
             Contact
           </a>
           <a
-            href={`${import.meta.env.BASE_URL}team/`}
+            href={`${import.meta.env.BASE_URL}#team`}
             onClick={closeMenu}
           >
-            Our Team
+          Our Team
         </a>
         </nav>
 
