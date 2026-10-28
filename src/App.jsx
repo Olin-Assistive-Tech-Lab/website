@@ -1,3 +1,4 @@
+import Footer from "./Footer.jsx";
 import { useState, useEffect } from "react";;
 import {
   ArrowRight,
@@ -7,7 +8,6 @@ import {
 } from "lucide-react";
 
 import "./styles.css";
-
 function App() {
   const [menuOpen, setMenuOpen] = useState(false);
 
@@ -151,10 +151,16 @@ function App() {
           </div>
 
           <img 
-    src={`${import.meta.env.BASE_URL}images/oat-team-2026-2027.jpg`}
-    style={{ width: '40%', height: 'auto', borderRadius: '8px' }} 
-    alt="OAT Lab Team 2026-2027 School Year" 
-  />  
+  src={`${import.meta.env.BASE_URL}images/oat-team-2026-2027.jpg`}
+  style={{ 
+    width: '40%', 
+    height: 'auto', 
+    borderRadius: '8px', 
+    display: 'block',     // 1. Makes the image act like a container block
+    marginLeft: '-70px'   // 2. Adjust this value to shift it as far left as needed
+  }} 
+  alt="OAT Lab Team 2026-2027 School Year" 
+/>
 
         </section>
 
@@ -811,28 +817,7 @@ function App() {
           FOOTER
       ========================= */}
 
-      <footer>
-
-        <img
-          src={`${import.meta.env.BASE_URL}images/oat-logo.png`}
-          alt="Olin Assistive Technology Lab"
-        />
-
-        <div>
-          <strong>
-            OLIN ASSISTIVE TECHNOLOGY LAB
-          </strong>
-
-          <span>
-            Olin College of Engineering
-          </span>
-        </div>
-
-        <a href="#home">
-          Back to top ↑
-        </a>
-
-      </footer>
+      <Footer />
 
     </div>
   );

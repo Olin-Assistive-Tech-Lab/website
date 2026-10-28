@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
+import Footer from "./Footer.jsx";
 
 function Team() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -36,8 +37,8 @@ function Team() {
         },
         {
           name: "Titilayo Oshinowo",
-          role: "UI,UX, & Design Lead",
-          image: "titi.jpg",
+          role: "UI/UX & Design Lead",
+          image: "members/titi.JPG",
         },
         {
           name: "Trevor McDonald",
@@ -147,6 +148,11 @@ function Team() {
           name: "Spencer Fieldroy",
           role: "Mechanical & Actuation",
           image: "spencer.jpg",
+        },
+        {
+          name: "Adi Kinhikar",
+          role: "Mechanical & Actuation",
+          image: "adi.jpg",
         },
       ],
     },
@@ -314,6 +320,11 @@ function Team() {
         </div>
 
       </main>
+
+      {/* =========================
+          FOOTER
+      ========================= */}
+      <Footer />
 
     </div>
   );
