@@ -393,95 +393,109 @@ function App() {
 
 
         {/* =========================
-            CONNECTIONS
-        ========================= */}
+    CONNECTIONS
+========================= */}
 
-        <section
-          id="connections"
-          className="section connections"
-        >
+<section
+  id="connections"
+  className="section connections"
+>
+  <div className="section-number">
+    03
+  </div>
 
-          <div className="section-number">
-            03
-          </div>
+  <div className="section-title">
+    <p className="section-label">
+      OUR CONNECTIONS
+    </p>
 
-          <div className="section-title">
+    <h2>
+      Better work
+      <br />
+      <em>together.</em>
+    </h2>
+  </div>
 
-            <p className="section-label">
-              OUR CONNECTIONS
-            </p>
+  <div className="connection-grid">
 
-            <h2>
-              Better work
-              <br />
-              <em>together.</em>
-            </h2>
+    {/* OLIN COLLEGE */}
+    <a
+      href="https://www.olin.edu/"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="connection-card"
+    >
 
-          </div>
+      <img
+        src={`${import.meta.env.BASE_URL}images/olin.webp`}
+        alt="Olin College"
+        className="connection-image"
+      />
 
+      <h3>Olin Community</h3>
 
-          <div className="connection-grid">
+      <p>
+        Students and faculty contribute
+        engineering, design, research,
+        and interdisciplinary perspectives.
+      </p>
+    </a>
 
-            <div className="connection-card">
-              <span>01</span>
+    {/* CARROLL CENTER */}
+    <a
+      href="https://carroll.org/"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="connection-card"
 
-              <img 
-    src={`${import.meta.env.BASE_URL}images/olin.webp`}
-    style={{ width: '80%', height: 'auto', borderRadius: '3px', display: 'block', margin: '0 auto' }} 
-    alt="OAT Lab Team 2025-2026 School Year Second Version" 
-  />
+    >
 
-              <h3>
-                Olin Community
-              </h3>
+      <img
+        src={`${import.meta.env.BASE_URL}images/carroll.png`}
+        alt="The Carroll Center for the Blind"
+        className="connection-image"
+      />
 
-              <p>
-                Students and faculty contribute
-                engineering, design, research,
-                and interdisciplinary perspectives.
-              </p>
-            </div>
+      <h3>The Carroll Center for the Blind</h3>
 
+      <p>
+        The Carroll Center for the Blind is the foremost
+        leader in vision rehabilitation services for
+        individuals confronted by the challenges of
+        vision loss. OAT Lab has taken initiative to
+        interview people that are a part of here.
+      </p>
+    </a>
 
-            <div className="connection-card">
-              <span>02</span>
+    {/* PERKINS SCHOOL FOR THE BLIND */}
+    <a
+      href="https://www.perkins.org/"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="connection-card"
+    >
 
-              <img 
-    src={`${import.meta.env.BASE_URL}images/carroll.png`}
-    style={{ width: '80%', height: 'auto', borderRadius: '3px', display: 'block', margin: '0 auto' }} 
-    alt="OAT Lab Team 2025-2026 School Year Second Version" 
-  />
+      <img
+        src={`${import.meta.env.BASE_URL}images/perkins.png`}
+        alt="Perkins School for the Blind"
+        className="connection-image"
+      />
 
-              <h3>
-                The Carroll Center for the Blind
-              </h3>
+      <h3>Perkins School for the Blind</h3>
 
-              <p>
-                The Carroll Center for the Blind is the foremost leader in vision rehabilitation services for individuals confronted by the challenges of vision loss. OAT Lab has taken initiative to interview people that are a part of here.
-              </p>
-            </div>
+      <p>
+        Perkins helps children with disabilities find
+        their place in the world. We are the worldwide
+        leader in education services for children and
+        young adults with disabilities. We believe every
+        child can learn and learning is for life.
+        OAT Lab has taken initiative to interview
+        people that are a part of here.
+      </p>
+    </a>
 
-            <div className="connection-card">
-              <span>03</span>
-
-              <img 
-    src={`${import.meta.env.BASE_URL}images/perkins.png`} 
-    style={{ width: '80%', height: 'auto', borderRadius: '3px', display: 'block', margin: '0 auto' }} 
-    alt="OAT Lab Team 2025-2026 School Year Second Version" 
-  />
-
-              <h3>
-                Perkins School for the Blind
-              </h3>
-
-              <p>
-                TPerkins helps children with disabilities find their place in the world. We are the worldwide leader in education services for children and young adults with disabilities. We believe every child can learn and learning is for life. OAT Lab has taken initiative to interview people that are a part of here.
-              </p>
-            </div>
-
-          </div>
-
-        </section>
+  </div>
+</section>
 
 
         {/* =========================
@@ -506,9 +520,10 @@ function App() {
             </h2>
 
             <p>
-              The lab continues to grow through
-              research, student projects, and
-              collaborations focused on accessibility.
+      From ORBITAL's early exploration of accessible
+      technology to OAT Lab's Jumbo Braille learning
+      device, our journey has been shaped by research,
+      design, and a commitment to accessibility.
             </p>
 
           </div>
@@ -519,19 +534,44 @@ function App() {
             <div className="timeline-item">
 
               <div className="timeline-year">
-                BEGIN
+                Fall 2024
               </div>
 
               <div>
                 <h3>
-                  Building the Lab
+                  The Beginning — Exploring Accessibility
                 </h3>
 
                 <p>
-                  Olin students and researchers
-                  began exploring assistive technology
-                  through hands-on projects and
-                  accessibility-focused research.
+                  A group of Olin students formed ORBITAL (Olin Research for Biomedical Innovation and Technological Advancement Lab), a human-centered project team exploring a wide range of 
+                  accessibility, biomedical, and assistive technology ideas. The original interest meeting focused on researching the needs of people with physical, mobility, and sensory 
+                  disabilities before choosing a specific project.
+                </p>
+
+                <img
+          src={`${import.meta.env.BASE_URL}images/history/ORBITAL-Textual-Logo(2).PNG`}
+          alt="Original ORBITAL project team"
+          className="timeline-image"
+        />
+              </div>
+
+            </div>
+
+
+            <div className="timeline-item">
+
+              <div className="timeline-year">
+                Spring 2025
+              </div>
+
+              <div>
+                <h3>
+                  The First Project: Open-Source Braille E-Reader
+                </h3>
+
+                <p>
+                  The team narrowed its focus to an affordable, open-source Braille e-reader, designed to make digital reading more accessible. 
+                  The proposal explored refreshable Braille cells, document-to-Braille conversion, and collaboration with Perkins School for the Blind.
                 </p>
               </div>
 
@@ -541,21 +581,25 @@ function App() {
             <div className="timeline-item">
 
               <div className="timeline-year">
-                RESEARCH
+                Fall 2025
               </div>
 
               <div>
                 <h3>
-                  Learning From Users
+                  A New Identity: OAT Lab
                 </h3>
 
                 <p>
-                  Research expanded to include
-                  conversations and interviews with
-                  people with disabilities to better
-                  understand their experiences with
-                  technology.
+                  The team adopted the name Olin Assistive Technology Lab (OAT Lab), reflecting 
+                  its broader mission of designing impactful assistive technology through student engineering, 
+                  research, and collaboration with users.
                 </p>
+                <img
+                src={`${import.meta.env.BASE_URL}images/history/oat_black-italics_laurel_tp.png`}
+          alt="Original ORBITAL project team"
+          className="timeline-image"
+/>
+                
               </div>
 
             </div>
@@ -564,43 +608,24 @@ function App() {
             <div className="timeline-item">
 
               <div className="timeline-year">
-                TODAY
+                Now
               </div>
 
               <div>
                 <h3>
-                  Growing Through Collaboration
+                  Jumbo Braille: Learning Through Touch
                 </h3>
 
                 <p>
-                  Current work combines accessibility,
-                  human-centered research, engineering,
-                  and design to investigate new
-                  assistive technologies.
+                  The project evolved into a Braille learning device featuring enlarged, tactile Braille cells to help beginners develop familiarity with Braille. 
+                  The current direction emphasizes interactive lessons, accessible physical controls, and audio and haptic feedback.
                 </p>
-              </div>
+                <img
+          src={`${import.meta.env.BASE_URL}images/history/jumbo.png`}
+          alt="Original ORBITAL project team"
+          className="timeline-image"
+        />
 
-            </div>
-
-
-            <div className="timeline-item">
-
-              <div className="timeline-year">
-                NEXT
-              </div>
-
-              <div>
-                <h3>
-                  Expanding Possibilities
-                </h3>
-
-                <p>
-                  We are continuing to build
-                  partnerships, develop projects,
-                  and create opportunities for
-                  students to contribute to
-                  accessible technology research.
-                </p>
               </div>
 
             </div>
@@ -610,110 +635,200 @@ function App() {
         </section>
 
 
-        {/* =========================
-            SPONSOR
-        ========================= */}
+        
+{/* =========================
+    SPONSOR US
+========================= */}
 
-        <section
-          id="sponsor"
-          className="sponsor"
-        >
+<section id="sponsor" className="sponsor">
 
-          <div className="sponsor-image">
+  {/* LEFT SIDE — GOOGLE FORM */}
+  <div className="sponsor-form-panel">
 
-            <img
-              src={`${import.meta.env.BASE_URL}images/oat-logo.png`}
-              alt="oat lab logo"
-            />
+    <div className="sponsor-form-heading">
+      <p className="section-label">
+        BECOME A SPONSOR
+      </p>
 
-            <div className="sponsor-image-overlay" />
+      <h3>Partner with OAT Lab.</h3>
 
-          </div>
+      <p>
+        Interested in supporting our work?
+        Complete the form below to connect with
+        our team about sponsorship opportunities,
+        technical support, and collaboration.
+      </p>
+    </div>
 
+    <div className="sponsor-google-form">
+      <iframe
+        title="OAT Lab Sponsorship Interest Form"
+        src="https://docs.google.com/forms/d/e/1FAIpQLSfpmb2Dx732L7qkeZIbBq2hIBrV-0Ymv-UIp49YaeJ-QB6j8g/viewform?usp=sharing&ouid=101556864307449687472"
+        width="100%"
+        height="850"
+        loading="lazy"
+      >
+        Loading…
+      </iframe>
+    </div>
 
-          <div className="sponsor-content">
-
-            <p className="section-label">
-              05 / SUPPORT THE LAB
-            </p>
-
-            <h2>
-              Sponsor
-              <br />
-              <em>our work.</em>
-            </h2>
-
-            <p className="sponsor-lead">
-              Help students and researchers
-              explore new possibilities in
-              accessible and assistive technology.
-            </p>
-
-            <p>
-              Support can take many forms,
-              including financial contributions,
-              equipment, technical expertise,
-              mentorship, research partnerships,
-              and opportunities for students.
-            </p>
+  </div>
 
 
-            <div className="support-options">
+  {/* RIGHT SIDE — SPONSOR INFORMATION */}
+  <div className="sponsor-content">
 
-              <div>
-                <strong>
-                  Funding
-                </strong>
+    <p className="section-label">
+      05 / SUPPORT THE LAB
+    </p>
 
-                <span>
-                  Support research and prototypes.
-                </span>
-              </div>
+    <h2>
+      Sponsor
+      <br />
+      <em>our work.</em>
+    </h2>
 
-              <div>
-                <strong>
-                  Equipment
-                </strong>
+    <p className="sponsor-intro">
+      Our team relies on collaborative relationships
+      with sponsors to develop meaningful assistive
+      technology.
+    </p>
 
-                <span>
-                  Provide tools and technology.
-                </span>
-              </div>
+    <p className="sponsor-description">
+      The Olin Assistive Technology Lab (OAT Lab)
+      is a student-led project team dedicated to
+      designing assistive devices that make the
+      world more accessible.
+    </p>
 
-              <div>
-                <strong>
-                  Mentorship
-                </strong>
+    <p className="sponsor-description">
+      We are currently developing an open-source
+      Braille learning device for people who have
+      recently lost their vision or are beginning
+      to learn Braille. By developing this device
+      with its users in mind, we aim to make
+      accessibility central to our engineering
+      and design process.
+    </p>
 
-                <span>
-                  Share expertise with students.
-                </span>
-              </div>
-
-              <div>
-                <strong>
-                  Partnership
-                </strong>
-
-                <span>
-                  Collaborate on accessibility research.
-                </span>
-              </div>
-
-            </div>
+    <p className="sponsor-description">
+      We welcome support from companies,
+      organizations, professionals, and individuals.
+      There are many ways to contribute to our work:
+    </p>
 
 
-            <a
-              href="#contact"
-              className="dark-button"
-            >
-              Become a Partner
-              <ArrowRight size={18} />
-            </a>
+    {/* SPONSORSHIP OPTIONS */}
+    <div className="sponsor-options">
 
-          </div>
+      <div className="sponsor-option">
+        <h3>FUNDING</h3>
 
-        </section>
+        <p>
+          Financial contributions help us purchase
+          electronic components, manufacture custom
+          PCBs, fabricate prototypes, compensate
+          research participants, and support
+          team activities.
+        </p>
+      </div>
+
+      <div className="sponsor-option">
+        <h3>EQUIPMENT & MATERIALS</h3>
+
+        <p>
+          Donations of actuators, sensors,
+          electronics, fabrication materials,
+          and other hardware help us build
+          and improve our Braille learning device.
+        </p>
+      </div>
+
+      <div className="sponsor-option">
+        <h3>MENTORSHIP</h3>
+
+        <p>
+          Professional expertise, design reviews,
+          and technical guidance help our team
+          overcome engineering challenges and
+          provide valuable learning opportunities
+          for student engineers.
+        </p>
+      </div>
+
+      <div className="sponsor-option">
+        <h3>SERVICES & MANUFACTURING</h3>
+
+        <p>
+          Access to specialized fabrication,
+          manufacturing, testing, and engineering
+          services helps us develop components
+          that may be difficult to produce
+          using our existing resources.
+        </p>
+      </div>
+
+      <div className="sponsor-option">
+        <h3>COMMUNITY COLLABORATION</h3>
+
+        <p>
+          Partnerships with accessibility
+          organizations, educators, and members
+          of the visually impaired community
+          help us develop technology informed
+          by real user needs and feedback.
+        </p>
+      </div>
+
+    </div>
+
+
+    {/* CROWDFUNDING INFORMATION */}
+    <div className="sponsor-donate">
+
+      <h3>Support Our $6,250 Fundraising Goal</h3>
+
+      <p>
+        Every contribution makes a difference.
+        From purchasing components and manufacturing
+        custom circuit boards to supporting user
+        research and attending assistive technology
+        conferences, your generosity helps us
+        continue our work.
+      </p>
+
+      <p>
+        Whether it's $5 or $1,000, thank you
+        for helping us make accessible technology
+        a reality.
+      </p>
+
+      <a
+        href="https://www.olin.edu/oat"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="sponsor-button"
+      >
+        Donate Through Olin College
+        <ArrowRight size={18} />
+      </a>
+
+    </div>
+
+
+    {/* CONTACT */}
+    <p className="sponsor-contact">
+      Have questions about sponsoring or
+      collaborating with OAT Lab?{" "}
+      <a href="#contact">
+        Contact our team.
+      </a>
+    </p>
+
+  </div>
+
+</section>
+
 
 
         {/* =========================
